@@ -8,12 +8,14 @@ import UIKit
 
 
 
-
+for i in 0 ... 4 {
+    print("IOS")
+}
 //: # 2️⃣ function
 
 // MARK: هذي الداله تقوم بضرب رقمين و ترجع الناتج
 
-func Multiplication(  number1 : Int ,  number2 : Int)
+func Multiplication(_ number1 : Int , _ number2 : Int) -> Int
 {
     
     return number1 * number2
@@ -28,7 +30,11 @@ Multiplication(5,7)
 //: # 3️⃣ struct
 // struct...
 
-
+struct Student {
+    let name: String
+    var age: Int
+    var hobbies: [String]
+}
 
 // MARK:  الكائن  object مبنية علي هذي struct  قم بكتابة كود ال
 var student = Student(name: "Omar", age: 25 , hobbies: ["Coding", "drawing"])
